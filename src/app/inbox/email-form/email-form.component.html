@@ -1,0 +1,27 @@
+<form class="ui form" [formGroup]="emailForm">
+  <app-input
+    [control]="controls('to')"
+    inputType="email"
+    label="To"
+  ></app-input>
+
+  <app-input
+    [control]="controls('from')"
+    inputType="email"
+    label="From"
+  ></app-input>
+
+  <app-input
+    [control]="controls('subject')"
+    inputType="text"
+    label="Subject"
+  ></app-input>
+
+  <app-input
+    controlType="textarea"
+    [control]="controls('text')"
+    label="Content"
+  ></app-input>
+
+  <button class="ui button primary">Send</button>
+</form>
